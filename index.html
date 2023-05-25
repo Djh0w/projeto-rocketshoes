@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RocketShoes</title>
+</head>
+<body>
+    <nav>
+        <img class="logo" src="./assets/logo.svg" alt="Logo tenis">
+
+        <ul class="menu-nav">
+            <li>HOMEM</li>
+            <li>MULHER</li>
+            <li>CRIANCA</li>
+            <li>CUSTOMIZAR</li>
+        </ul>
+
+        <input type="text" placeholder="Pesquisar">
+
+        <img class="bag" src="./assets/icon-bag.svg" alt="sacolas">
+    </nav>
+
+    <div class="price">
+        <h1>Tênis Esportivo Para Corrida Top</h1>
+        <p>Esse tênis tem o intuito de te deixar ainda mais fitness, focado, e musculoso.</p>
+        <h3>R$ 1.000,00</h3>
+        <button class="buy">Comprar</button>
+    </div>
+
+    <main>
+        <img id="selected-img" class="zoom-tenis" src="./assets/sneakers-1-removebg.png" alt="">
+        <ul class="select-tenis">
+            <li><img id="sneakers-2" onclick="changeImage2('./assets/sneakers-2-removebg.png')"  
+                src="./assets/tenis-1-galeria.png" alt="imagem tenis"></li>
+            <li><img id="sneakers-1" onclick="changeImage1('./assets/sneakers-1-removebg.png')"  src="./assets/tenis-2-galeria.png" alt="imagem tenis"></li>
+            <li><img id="sneakers-3" 
+                    onclick="changeImage3('./assets/sneakers-3-removebg.png')"  src="./assets/tenis-3-galeria.png" alt="imagem tenis"></li>
+        </ul>
+    </main>
+
+    <footer>
+        <ul class="itens-footer">
+            <li>
+                <iframe 
+                    src="https://www.youtube.com/embed/FPko8TWV3Vk" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </li>
+            <li>INSTAGRAM</li>
+            <li>YOUTUBE</li>
+            <li>TWITTER</li>
+        </ul>
+
+        <button class="explorer">EXPLORE MAIS <img class="arrow" src="./assets/icon-arrow.svg" alt="icone seta"></button>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
